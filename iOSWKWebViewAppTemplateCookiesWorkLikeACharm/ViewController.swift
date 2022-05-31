@@ -43,7 +43,7 @@ class ViewController: UIViewController {
         //even if your app is pink you still should set the color below to match perfectly with your app's pink color shade
         //Keep in mind that all ranges for red, green blue and alpha are 0-1 with decimals
         
-        statusbarView.backgroundColor = UIColor(red: 0.93, green: 0, blue: 1, alpha: 1)
+        statusbarView.backgroundColor = UIColor(red: 0.20, green: 0.51, blue: 0.73, alpha: 1.00)
         view.addSubview(statusbarView)
         
         //Setting the correct sizes and positioning for our custom color status bar background
@@ -76,7 +76,7 @@ class ViewController: UIViewController {
         //So keep in mind that your remote website should look and feel like iOS app (as much as possible),
         //especially if you are planning to distribute it via App Store and expect to successfully pass Apple's App Review
         
-        if let url = URL(string: "https://google.com") {
+        if let url = URL(string: "https://groupat.online") {
             let request = URLRequest(url: url)
             webView.load(request)
             
@@ -150,7 +150,7 @@ class ViewController: UIViewController {
     override var preferredStatusBarStyle : UIStatusBarStyle {
         
         //Next lines makes Status Bar Text Color white
-        return UIStatusBarStyle.lightContent
+        return UIStatusBarStyle.darkContent
         
         //In case you want to switch back Status Bar Text Color to black from white programmatically under some condition
         //here's an example for you how to do it in nearest commented swift code line below
@@ -248,7 +248,7 @@ extension WKWebView {
 //So, keep in mind that your remote website should look and feel like iOS app (as much as possible),
 //especially if you are planning to distribute it via App Store and expect to successfully pass Apple's App Review
 
-let url = URL(string: "https://google.com")!
+let url = URL(string: "https://groupat.online")!
 
 extension ViewController: WKUIDelegate, WKNavigationDelegate {
     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
